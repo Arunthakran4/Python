@@ -1,0 +1,9 @@
+x={"Set":"a group of words","Mutable":"that can change ","Mortal":"which can die","Immutable":"which cannot change"}
+print("Choose Set,Mutable,Mortal,Immutable:")
+print(x[input()])         #above and below both are same but here we have to write exact same word of dictionary
+a=input()
+y=a.capitalize()
+print(x[y])
+b=input()
+y1=b.capitalize()
+print(x[y1])
