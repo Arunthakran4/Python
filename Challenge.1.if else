@@ -1,0 +1,11 @@
+print("What is your age?")
+age=int(input())
+if 7<=age<100:
+    if age>18:
+        print("You can drive")
+    elif age<18:
+        print("You cant drive")
+    elif age==18:
+        print("come for physical test")
+else:
+    print("Enter valid age")
