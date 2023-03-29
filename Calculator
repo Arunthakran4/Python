@@ -1,0 +1,78 @@
+import tkinter as t
+wi=t.Tk()
+wi.title("Calculator")
+wi.geometry("400x500")
+e1=t.Entry(wi,width=50)
+e1.place(x=50,y=50)
+
+
+def res():
+   x=eval(e1.get())
+   print(x)
+   e1.delete(0,'end')
+   e1.insert(t.END,str(x))
+
+
+def one():
+    e1.insert(t.END,"1")
+def two():
+    e1.insert(t.END, "2")
+def three():
+    e1.insert(t.END,"3")
+def four():
+    e1.insert(t.END,"4")
+def five():
+    e1.insert(t.END,"5")
+def six():
+    e1.insert(t.END,"6")
+def seven():
+    e1.insert(t.END,"7")
+def eight():
+    e1.insert(t.END,"8")
+def nine():
+    e1.insert(t.END,"9")
+def zero():
+    e1.insert(t.END,"0")
+
+def add():
+    e1.insert(t.END,"+")
+def sub():
+    e1.insert(t.END,"-")
+def mul():
+    e1.insert(t.END,"*")
+def div():
+    e1.insert(t.END,"/")
+
+
+b1=t.Button(wi,text="1",font=("ariel",18,'bold'),command=one)
+b2=t.Button(wi,text="2",font=("ariel",18,'bold'),command=two)
+b3=t.Button(wi,text="3",font=("ariel",18,'bold'),command=three)
+b4=t.Button(wi,text="4",font=("ariel",18,'bold'),command=four)
+b5=t.Button(wi,text="5",font=("ariel",18,'bold'),command=five)
+b6=t.Button(wi,text="6",font=("ariel",18,'bold'),command=six)
+b7=t.Button(wi,text="7",font=("ariel",18,'bold'),command=seven)
+b8=t.Button(wi,text="8",font=("ariel",18,'bold'),command=eight)
+b9=t.Button(wi,text="9",font=("ariel",18,'bold'),command=nine)
+b0=t.Button(wi,text="0",font=("ariel",18,'bold'),command=zero)
+b1.place(x=25,y=125)
+b2.place(x=100,y=125)
+b3.place(x=175,y=125)
+b4.place(x=25,y=225)
+b5.place(x=100,y=225)
+b6.place(x=175,y=225)
+b7.place(x=25,y=325)
+b8.place(x=100,y=325)
+b9.place(x=175,y=325)
+b0.place(x=50,y=425)
+ad=t.Button(wi,text="+",font=("ariel",18,'bold'),command=add)
+ad.place(x=300,y=125)
+su=t.Button(wi,text="-",font=("ariel",18,'bold'),command=sub)
+su.place(x=300,y=225)
+mu=t.Button(wi,text="x",font=("ariel",18,'bold'),command=mul)
+mu.place(x=300,y=325)
+di=t.Button(wi,text="/",font=("ariel",18,'bold'),command=div)
+di.place(x=300,y=425)
+re=t.Button(wi,text="=",font=("ariel",18,'bold'),command=res)
+re.place(x=140,y=425)
+
+wi.mainloop()
