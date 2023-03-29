@@ -33,7 +33,6 @@ def nine():
     e1.insert(t.END,"9")
 def zero():
     e1.insert(t.END,"0")
-
 def add():
     e1.insert(t.END,"+")
 def sub():
@@ -42,7 +41,6 @@ def mul():
     e1.insert(t.END,"*")
 def div():
     e1.insert(t.END,"/")
-
 
 b1=t.Button(wi,text="1",font=("ariel",18,'bold'),command=one)
 b2=t.Button(wi,text="2",font=("ariel",18,'bold'),command=two)
